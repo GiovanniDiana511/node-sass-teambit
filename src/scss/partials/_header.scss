@@ -1,0 +1,40 @@
+.header {
+    height: 75px;
+    width: 100vw;
+    background-color: $primary_color;
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        background-color: $test;
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+        border-bottom: 1px solid $font_color;
+        .logo-box {
+            display: flex;
+            justify-content: flex-start;
+            height: 100%;
+            width: 15%;
+            background-color: $test2;
+            #logo {
+                color: $font_color;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .interaction-box {
+            background-color: $test3;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            width: 45%;
+            li {
+                margin: 10px 10px;
+                color: $font_color;
+                font-weight: bold;
+            }
+        }
+    }
+}
