@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Header */
@@ -11,15 +12,14 @@
 .header {
   height: 75px;
   width: 100vw;
-  background-color: #ffe7d2;
 }
 
 .header .header-inner {
   display: flex;
   justify-content: space-between;
-  background-color: green;
   height: 100%;
-  width: 70%;
+  width: 60vw;
+  margin: 0 auto;
   margin: 0 auto;
   border-bottom: 1px solid #58402c;
 }
@@ -27,34 +27,153 @@
 .header .header-inner .logo-box {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   height: 100%;
   width: 15%;
-  background-color: yellow;
 }
 
 .header .header-inner .logo-box #logo {
+  padding-left: 3px;
   color: #58402c;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
 }
 
 .header .header-inner .interaction-box {
-  background-color: orange;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
   width: 45%;
+  padding-right: 3px;
 }
 
 .header .header-inner .interaction-box li {
+  font-size: 14px;
   margin: 10px 10px;
   color: #58402c;
   font-weight: bold;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.header .header-inner .interaction-box li:hover {
+  color: #30488f;
+  cursor: pointer;
+}
+
+.header .header-inner .interaction-box #btnsign {
+  flex-shrink: 0;
+  padding: 8px 10px;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  padding-left: 30px;
+  font-weight: bold;
+  background-color: white;
+  color: #30488f;
+}
+
+.header .header-inner .interaction-box #btnsign:hover {
+  background-color: #30488f;
+  color: white;
+  cursor: pointer;
 }
 
 /* Main */
+
+.main {
+  height: 6000px;
+  background-color: #ffe7d2;
+  max-width: 100vw;
+  margin-top: 120px;
+}
+
+.main .section {
+  height: 500px;
+  background-color: white;
+}
+
+.main .section .section-inner {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.main .section .section-inner::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main .section .section-inner .container-left {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.main .section .section-inner .container-left > h1 {
+  color: #58402c;
+  font-size: 50px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  width: 90%;
+}
+
+.main .section .section-inner .container-left > p {
+  color: #58402c;
+  font-size: 22px;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.main .section .section-inner .container-left .button-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.main .section .section-inner .container-left .button-box > button {
+  padding: 8px 10px;
+  padding-left: 30px;
+  border-radius: 5px;
+  background-color: #30488f;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.main .section .section-inner .container-left .button-box > button:hover {
+  cursor: pointer;
+}
+
+.main .section .section-inner .container-left .button-box > p {
+  padding: 8px 10px;
+  color: #58402c;
+}
+
+.main .section .section-inner .container-left .button-box > a {
+  font-size: 14px;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #58402c;
+}
+
+.main .section .section-inner .container-left .button-box > a:hover {
+  color: #30488f;
+}
+
+.main .section .section-inner .container-right {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.main .section .section-inner .container-right > img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 /* Footer*/
 
