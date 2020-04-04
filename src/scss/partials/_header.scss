@@ -1,6 +1,6 @@
 .header {
     height: 75px;
-    width: 100vw;
+    max-width: 100vw;
     .header-inner {
         display: flex;
         justify-content: space-between;
@@ -40,13 +40,16 @@
                     color: $secondary_color;
                     cursor: pointer;
                 }
+                span {
+                    margin-left: 5px;
+                }
             }
             #btnsign {
                 flex-shrink: 0;
                 padding: 8px 10px;
                 border: 1px solid $secondary_color;
                 border-radius: 5px;
-                padding-left: 30px;
+                padding-left: 15px;
                 font-weight: bold;
                 background-color: white;
                 color: $secondary_color;
@@ -54,6 +57,9 @@
                     background-color: $secondary_color;
                     color: white;
                     cursor: pointer;
+                }
+                > span {
+                    margin-right: 10px;
                 }
             }
         }
